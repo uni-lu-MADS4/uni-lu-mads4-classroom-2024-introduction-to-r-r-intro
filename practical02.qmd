@@ -1,0 +1,156 @@
+---
+title: "Getting started with R"
+author: Your name here
+date: today
+format: html
+---
+
+### Exercise 1 {#sec-1}
+
+* Create a vector of the letters A, B and C.
+
+```{r}
+# Your answer in code
+
+```
+> Your answer as text
+
+
+
+* Assign the vector to a variable `my_letters`
+```{r}
+# Your answer in code
+
+```
+
+
+* Check the what happens when you run `letters` (just this) on the command line.
+```{r}
+# Your answer in code
+
+```
+
+> Your answer as text
+
+
+
+* What happens when you concatenate two vectors? Add `c(my_letters , my_letters)`
+```{r}
+# Your answer in code
+
+
+```
+
+> Your answer as text
+
+
+
+* Add the number 1 to letters. What happens to the type of the vector?
+```{r}
+# Your answer in code
+
+
+```
+
+> Your answer as text
+
+
+
+### Exercise 2
+
+
+1. Create a vector `my_vec` with the numbers from 1 through 8.
+2. Apply the operation `+2` to the vector/
+3. Add the vector containing 1, 2, 3, 4 to `my_vec`. What do you observe?
+
+```{r}
+# Your answer in code
+
+
+
+
+
+```
+
+
+
+### Exercise 3
+
+* Consider the R output of the matrix below:
+
+```
+ [,1] [,2]
+ [1,]    4    1
+ [2,]    9    5
+ [3,]   10    7
+```
+
+1. What was one of the correct commands used to write this matrix?
+2. Assign the matrix as `A`
+3. Check the dimensions
+4. Extract the element `5`
+5. Add the vector `c(0,0,0)` as a new column and update `A`
+6. Modify the element 4 to `0`
+7. Compute the transpose of `A`
+
+```{r}
+# Your answer in code
+
+
+
+
+
+
+```
+
+
+8. Are any values in `A` larger than 10? 
+```{r}
+# Your answer in code
+
+```
+
+9. Are all values in `A` smaller than 10?
+```{r}
+# Your answer in code
+
+```
+
+### Exercise 4
+
+1. Create a function that sums up two values even if provided as characters values
+
+```{r}
+# Your answer in code
+
+
+
+
+
+```
+
+
+### Exercise 5
+
+1. Create a function that returns the mean, median and standard deviation.
+
+```{r}
+# Your answer in code
+
+
+
+```
+
+
+### Exercise 6
+1. Create a pipe statement that counts the number of NAs in vector containing numbers, characters and missing values.
+The output of `c('1' , "a", NA, "2", NA)` should be 2.
+
+```{r}
+# Your answer in code
+
+
+
+```
+
+
