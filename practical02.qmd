@@ -1,7 +1,7 @@
 ---
 title: "Getting started with R"
-author: Your name here
-date: today
+author: Sowmya Janmahanthi
+date: 23-09-2024
 format: html
 ---
 
@@ -10,50 +10,54 @@ format: html
 * Create a vector of the letters A, B and C.
 
 ```{r}
-# Your answer in code
-
+vector <- c("A","B","C")
+vector
 ```
 > Your answer as text
+> vector
+[1] "A" "B" "C"
 
 
 
 * Assign the vector to a variable `my_letters`
 ```{r}
-# Your answer in code
-
+my_letters <- vector
+my_letters
 ```
-
+> my_letters
+[1] "A" "B" "C"
 
 * Check the what happens when you run `letters` (just this) on the command line.
 ```{r}
-# Your answer in code
-
+letters
 ```
 
-> Your answer as text
+>  [1] "a" "b" "c" "d" "e" "f" "g"
+ [8] "h" "i" "j" "k" "l" "m" "n"
+[15] "o" "p" "q" "r" "s" "t" "u"
+[22] "v" "w" "x" "y" "z"
 
 
 
 * What happens when you concatenate two vectors? Add `c(my_letters , my_letters)`
 ```{r}
-# Your answer in code
-
-
+c(my_letters , my_letters)
 ```
 
 > Your answer as text
-
+> c(my_letters , my_letters)
+[1] "A" "B" "C" "A" "B" "C"
 
 
 * Add the number 1 to letters. What happens to the type of the vector?
 ```{r}
-# Your answer in code
-
-
+updated_letters<-c(my_letters,"1")
+updated_letters
 ```
 
 > Your answer as text
-
+> updated_letters
+[1] "A" "B" "C" "1"
 
 
 ### Exercise 2
@@ -64,14 +68,21 @@ format: html
 3. Add the vector containing 1, 2, 3, 4 to `my_vec`. What do you observe?
 
 ```{r}
-# Your answer in code
-
-
-
-
-
+my_vec <- c(1:8)
+my_vec
+my_vec+2
+sum <- my_vec + c(1,2,3,4)
+sum
 ```
+> my_vec
+[1] 1 2 3 4 5 6 7 8
+> my_vec+2
+[1]  3  4  5  6  7  8  9 10
+> sum <- my_vec + c(1,2,3,4)
+> sum
+[1]  2  4  6  8  6  8 10 12
 
+Its adding the vector till the index and again adding to left over elements in vector.
 
 
 ### Exercise 3
@@ -94,13 +105,8 @@ format: html
 7. Compute the transpose of `A`
 
 ```{r}
-# Your answer in code
-
-
-
-
-
-
+matrix <- matrix(c(4,9,10,1,5,7), nrow = 3, ncol=2)
+matrix
 ```
 
 
